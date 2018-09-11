@@ -20,12 +20,12 @@ if (Test-Path C:\tempdir_$DATE\Logs\AzureLog_$DATE.txt)
 }
 
 
-(Invoke-WebRequest https://raw.githubusercontent.com/Eslam10/SentiaDeliverable_New/master/Scripts/Get_Temp_Param_Files.psm1).Content > "C:\tempdir_$DATE\Modules\Get_Temp_Param_Files.psm1"
-(Invoke-WebRequest https://raw.githubusercontent.com/Eslam10/SentiaDeliverable_New/master/Scripts/Create_Resource_Group.psm1).Content > "C:\tempdir_$DATE\Modules\Create_Resource_Group.psm1"
-(Invoke-WebRequest https://raw.githubusercontent.com/Eslam10/SentiaDeliverable_New/master/Scripts/Create_Storage_Account.psm1).Content > "C:\tempdir_$DATE\Modules\Create_Storage_Account.psm1"
-(Invoke-WebRequest https://raw.githubusercontent.com/Eslam10/SentiaDeliverable_New/master/Scripts/Create_VNwk_Subnets.psm1).Content > "C:\tempdir_$DATE\Modules\Create_VNwk_Subnets.psm1"
-(Invoke-WebRequest https://raw.githubusercontent.com/Eslam10/SentiaDeliverable_New/master/Scripts/Create_Policy_Definition.psm1).Content > "C:\tempdir_$DATE\Modules\Create_Policy_Definition.psm1"
-(Invoke-WebRequest https://raw.githubusercontent.com/Eslam10/SentiaDeliverable_New/master/Scripts/Create_Policy_Assignment.psm1).Content > "C:\tempdir_$DATE\Modules\Create_Policy_Assignment.psm1"
+(Invoke-WebRequest https://raw.githubusercontent.com/Eslam10/SentiaDeliverable_New/master/Scripts/Modules/Get_Temp_Param_Files.psm1).Content > "C:\tempdir_$DATE\Modules\Get_Temp_Param_Files.psm1"
+(Invoke-WebRequest https://raw.githubusercontent.com/Eslam10/SentiaDeliverable_New/master/Scripts/Modules/Create_Resource_Group.psm1).Content > "C:\tempdir_$DATE\Modules\Create_Resource_Group.psm1"
+(Invoke-WebRequest https://raw.githubusercontent.com/Eslam10/SentiaDeliverable_New/master/Scripts/Modules/Create_Storage_Account.psm1).Content > "C:\tempdir_$DATE\Modules\Create_Storage_Account.psm1"
+(Invoke-WebRequest https://raw.githubusercontent.com/Eslam10/SentiaDeliverable_New/master/Scripts/Modules/Create_VNwk_Subnets.psm1).Content > "C:\tempdir_$DATE\Modules\Create_VNwk_Subnets.psm1"
+(Invoke-WebRequest https://raw.githubusercontent.com/Eslam10/SentiaDeliverable_New/master/Scripts/Modules/Create_Policy_Definition.psm1).Content > "C:\tempdir_$DATE\Modules\Create_Policy_Definition.psm1"
+(Invoke-WebRequest https://raw.githubusercontent.com/Eslam10/SentiaDeliverable_New/master/Scripts/Modules/Create_Policy_Assignment.psm1).Content > "C:\tempdir_$DATE\Modules\Create_Policy_Assignment.psm1"
 
 Import-Module "C:\tempdir_$DATE\Modules\Get_Temp_Param_Files.psm1" -Force;
 Import-Module "C:\tempdir_$DATE\Modules\Create_Resource_Group.psm1" -Force;
